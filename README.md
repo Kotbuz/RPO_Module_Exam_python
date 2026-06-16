@@ -19,6 +19,7 @@ CREATE DATABASE nexus_db;
 
 ```bash
 cd backend
+cp .env.example .env && nano .env
 python -m venv venv # Windows: venv\Scripts\activate # macOS/Linux: source venv/bin/activate
 pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
@@ -27,6 +28,7 @@ uvicorn main:app --reload --port 8000
 
 ```bash
 cd frontend
+cp .env.example .env && nano .env
 npm install
 npm run dev
 ```
